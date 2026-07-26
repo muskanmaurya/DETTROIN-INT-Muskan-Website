@@ -23,12 +23,9 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "VasantValley School",
   description:
-    "VasantValley School is a premier educational institution dedicated to providing excellence in learning and development. We offer a comprehensive curriculum designed to nurture each student's potential and prepare them for future success.",
+    "VasantValley School is a premier educational institution that provides a holistic learning experience for students. Our mission is to nurture young minds and empower them to become responsible global citizens.",
   icons: {
-    icon: [
-      { url: "/assets/logo.png", type: "image/jpeg" },
-      { url: "/assets/favicon.png", sizes: "32x32" },
-    ],
+    icon: "/assets/logo/white-bg-logo.png", 
   },
 };
 
