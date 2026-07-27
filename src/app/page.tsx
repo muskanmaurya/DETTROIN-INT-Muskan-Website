@@ -1,3 +1,4 @@
+import { ExpandablePillars } from "@/components/layout/ExpandablePillers";
 import { Navbar } from "@/components/layout/Navbar";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import { HeroSection } from "@/components/sections/HeroSection";
@@ -7,7 +8,8 @@ export default function Home() {
     <SmoothScroll>
       <Navbar />
       <main>
-        <HeroSection />  
+        <HeroSection /> 
+        <ExpandablePillars /> 
       </main>
     </SmoothScroll>
   );

@@ -63,3 +63,55 @@ export const navItems: NavItem[] = [
     ],
   },
 ];
+
+
+export interface PillarItem {
+  id: string;
+  tag: string;
+  motto: string;
+  title: string;
+  description: string;
+  linkText: string;
+  href: string;
+  bgColor: string; // Dynamic column backgrounds
+  image: string;   // High-res cutout / photography
+}
+
+export const pillarsData: PillarItem[] = [
+  {
+    id: "vision",
+    tag: "VISION",
+    motto: "Excellence in Deed",
+    title: "Philosophy & Motto",
+    description:
+      "The School's motto sets the standard for Vasant Valley School. Individualized attention for each student, a 'process-focused' learning framework, equity of all stakeholders and commitment to society are the pillars of the School's philosophy. We believe that education is an enjoyable and interactive process.",
+    linkText: "EXPLORE VISION",
+    href: "#vision",
+    bgColor: "bg-[#FAFAF8]", // Cream canvas
+    image: "/assets/HeroImages/image1.png",
+  },
+  {
+    id: "day-in-school",
+    tag: "A DAY IN SCHOOL",
+    motto: "Education is preparation for life.",
+    title: "Life at Vasant Valley",
+    description:
+      "The school day comprises academic and nonacademic Learning Experiences and is planned with special focus on the developmental needs of our students. The entire Campus is a 'Classroom' and learning is continuous.",
+    linkText: "A DAY IN SCHOOL",
+    href: "#day-in-school",
+    bgColor: "bg-[#800020]", // Brand Maroon
+    image: "/assets/HeroImages/image2.png",
+  },
+  {
+    id: "learning-experience",
+    tag: "LEARNING EXPERIENCE",
+    motto: "Learning with Understanding",
+    title: "Academic Approach",
+    description:
+      "While high academic achievement is a priority, the school aims to create a community of well-rounded individuals, who are compassionate and confident. This fosters a spirit of cooperation and mutual respect among the students and teachers.",
+    linkText: "LEARNING EXPERIENCE",
+    href: "#learning-experience",
+    bgColor: "bg-[#FAFAF8]", // Deep Slate
+    image: "/assets/HeroImages/image3.png",
+  },
+];
