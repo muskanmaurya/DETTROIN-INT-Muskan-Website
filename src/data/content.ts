@@ -326,3 +326,46 @@ export const aboutData = {
     },
   ] as LeadershipMember[],
 };
+
+export interface TimelineEvent {
+  id: string;
+  date: string;
+  title: string;
+  category: string;
+  description: string;
+  image: string;
+  href: string;
+}
+
+export const timelineEventsData: TimelineEvent[] = [
+  {
+    id: "event-1",
+    date: "22 July 2026 – 23 July 2026",
+    title: "Synapse 2026",
+    category: "CULTURAL FEST",
+    description:
+      "The 15th edition of Synapse showcased student innovation, scientific inquiry, and creative expression across inter-school academic competitions.",
+    image: "/assets/HeroImages/image9.jpeg",
+    href: "#synapse-2026",
+  },
+  {
+    id: "event-2",
+    date: "17 July 2026",
+    title: "The 23rd Edition of Laissez Faire",
+    category: "BUSINESS & ENTREPRENEURSHIP",
+    description:
+      "Students demonstrated exceptional leadership, financial acumen, and entrepreneurial pitch presentations in this prestigious annual forum.",
+    image: "/assets/HeroImages/image5.jpeg",
+    href: "#laissez-faire",
+  },
+  {
+    id: "event-3",
+    date: "13 July 2026 – 15 July 2026",
+    title: "Inter-School Tennis Zonal Tournament",
+    category: "SPORTS & ATHLETICS",
+    description:
+      "Vasant Valley School's athletic teams achieved podium finishes with outstanding sportsmanship and individual singles victories.",
+    image: "/assets/HeroImages/image12.jpeg",
+    href: "#tennis-zonals",
+  },
+];

@@ -7,7 +7,7 @@ import { AnnouncementsSection } from "@/components/sections/AnnouncementsSection
 import { HeroSection } from "@/components/sections/HeroSection";
 import InfrastructureSection from "@/components/sections/InfrastructureSection";
 import {SocialAndImagesSection} from "@/components/sections/SocialAndImagesSection";
-import TimeLineSection from "@/components/sections/TimeLineSection";
+import {TimeLineSection} from "@/components/sections/TimeLineSection";
 
 export default function Home() {
   return (
