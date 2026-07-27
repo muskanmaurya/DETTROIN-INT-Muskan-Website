@@ -50,43 +50,43 @@ The objective of this project is to transform the classic Vasant Valley School w
 
 ### 1. Hero Section
 *Full-viewport backdrop featuring the school motto, primary CTA button, and glassmorphic top navigation header.*
-![Hero Section](./public/assets/screenshots/hero-section.jpg)
+![Hero Section](./public/assets/Screenshots/hero-section.jpg)
 
 ### 2. About Us & Leadership
 *Institutional narrative introducing founders Mr. Aroon Purie and Mrs. Rekha Purie alongside executive portrait cards.*
-![About Section](./public/assets/screenshots/about-section.jpg)
+![About Section](./public/assets/Screenshots/about-section.jpg)
 
 ### 3. Pillars of Excellence
 *Interactive spring accordion showcasing Vasant Valley's foundational philosophy and student engagement.*
-![Pillars Section](./public/assets/screenshots/pillers-section.jpg)
+![Pillars Section](./public/assets/Screenshots/pillers-section.jpg)
 
 ### 4. Interactive Scroll Announcements
 *Pinned scroll stage displaying institutional updates and the Vasant Valley Centre for Excellence on deep maroon.*
-![Announcements Section](./public/assets/screenshots/announcement-section.png)
+![Announcements Section](./public/assets/Screenshots/announcement-section.png)
 
 ### 5. Campus Architecture & Infrastructure
 *Staggered 3-tier building showcase highlighting the sports fields, sandstone wings, and iconic main gate.*
-![Infrastructure Section](./public/assets/screenshots/infrastructure-section.jpg)
+![Infrastructure Section](./public/assets/Screenshots/infrastructure-section.jpg)
 
 ### 6. Timeline of Recent Events
 *Beaded event rail featuring Synapse 2026, Laissez Faire, and Zonal Tournaments with dynamic card expansion.*
-![Timeline Section](./public/assets/screenshots/timeline-section.jpg)
+![Timeline Section](./public/assets/Screenshots/timeline-section.jpg)
 
 ### 7. Life & Community Marquee
 *Infinite dual-row floating photo marquee illustrating daily campus activities, labs, and student achievements.*
-![Socials Section](./public/assets/screenshots/socials-section.jpg)
+![Socials Section](./public/assets/Screenshots/socials-section.jpg)
 
 ### 8. Voices of Our Community (Reviews)
 *High-contrast parent and alumni testimonial card grid with star ratings and relation badges.*
-![Reviews Section](./public/assets/screenshots/reviews-section.png)
+![Reviews Section](./public/assets/Screenshots/reviews-section.png)
 
 ### 9. FAQ & Admissions Help Desk
 *Light glassmorphic admissions inquiry form paired with an interactive zero-padded FAQ accordion.*
-![FAQ Section](./public/assets/screenshots/faq-section.png)
+![FAQ Section](./public/assets/Screenshots/faq-section.png)
 
 ### 10. Footer & Legal Information
 *Comprehensive 5-column glassmorphic footer featuring quick links, contact info, and legal policies.*
-![Footer Section](./public/assets/screenshots/footer.png)
+![Footer Section](./public/assets/Screenshots/footer.png)
 
 ---
 
