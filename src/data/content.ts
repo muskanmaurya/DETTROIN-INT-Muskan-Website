@@ -133,30 +133,30 @@ export interface AnnouncementItem {
 export const announcementsData: AnnouncementItem[] = [
   {
     id: 1,
-    tag: "CAMPUS EXPANSION",
-    title: "Announcing Vasant Valley School, Gurgaon",
+    tag: "ANNOUNCEMENTS",
+    title: "Vasant Valley Centre for Excellence in Education",
     summary:
-      "Expanding our 36-year legacy of educational excellence. The new Gurgaon campus will uphold our core ethos, high standards, and commitment to holistic child-centred development.",
-    actionText: "LEARN MORE",
-    href: "#gurgaon",
+      "We are pleased to introduce the Vasant Valley Centre for Excellence in Education. This initiative is rooted in our school's long-standing commitment to excellence in teaching and learning. Our work at the Centre draws on thirty-six years of experience in nurturing professional learning communities, mentoring educators, and aligning academic practices with child-centred values that define Vasant Valley School.",
+    actionText: "READ MORE",
+    href: "#centre-of-excellence",
   },
   {
     id: 2,
-    tag: "ACADEMIC DISCLOSURE",
-    title: "Class 12 CBSE Marksheets Available",
+    tag: "ANNOUNCEMENTS",
+    title: "Announcing Vasant Valley School, Gurgaon",
     summary:
-      "Class XII All India Senior School Certificate Examination marksheets are ready for collection at the Senior School Office on working days between 10:00 AM and 3:00 PM.",
-    actionText: "VIEW OFFICE TIMINGS",
-    href: "#academics",
+      "We are very happy to announce that Vasant Valley School, founded and run by Education Today for over 36 years, is expanding. The first of the new Vasant Valley Schools will open in Gurgaon and will be led by a team of experienced educators. The ethos, standards, and commitment to holistic development that define the founding campus will remain at the heart of every new campus.",
+    actionText: "EXPLORE GURGAON CAMPUS",
+    href: "#gurgaon-campus",
   },
   {
     id: 3,
-    tag: "EXCELLENCE IN EDUCATION",
-    title: "Vasant Valley Centre for Excellence",
+    tag: "ANNOUNCEMENTS",
+    title: "Class 12 CBSE Marksheet",
     summary:
-      "A dedicated initiative drawing on 36 years of experience to nurture professional learning communities, mentor educators, and align academic practices with child-centred values.",
-    actionText: "EXPLORE CENTRE",
-    href: "#centre",
+      "CBSE Marksheets of the All India Senior School Certificate Examination for Class XII are available and can be collected from the Senior School Office on any working day between 10:00 a.m to 3:00 p.m. from Wednesday, 3rd June,2026 onwards.",
+    actionText: "VIEW OFFICE TIMINGS",
+    href: "#office-timings",
   },
 ];
 
