@@ -22,7 +22,7 @@ export function AnnouncementsSection() {
     <section ref={containerRef} className="relative h-[300vh] bg-[#5c0017]">
       {/* Sticky Full-Viewport Stage with Glassmorphic Ambient Glow */}
       <div className="sticky top-0 flex h-screen w-full flex-col items-center justify-center px-6 sm:px-12 overflow-hidden">
-
+    
 
         <div className="container-md relative z-10 mx-auto flex max-w-3xl flex-col items-center text-center">
           
@@ -113,12 +113,12 @@ function AnnouncementCard({
         >
 
           {/* Main Title */}
-          <h3 className="mt-4 font-display text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white min-w-2xl leading-tight">
+          <h3 className="mt-4  font-display text-2xl sm:text-2xl lg:text-4xl md:min-w-xl sm:max-w-l font-bold tracking-tight text-white min-w-2xl leading-tight">
             {item.title}
           </h3>
 
           {/* Description Body */}
-          <p className="mt-4 text-base  mb-5 sm:text-lg leading-relaxed text-white/85 min-w-2xl font-normal">
+          <p className="mt-4 text-base mb-5 sm:text-md leading-relaxed text-white/85 min-w-2xl sm:max-w-l md:min-w-xl font-normal">
             {item.summary}
           </p>
 
