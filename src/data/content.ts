@@ -369,3 +369,42 @@ export const timelineEventsData: TimelineEvent[] = [
     href: "#tennis-zonals",
   },
 ];
+
+
+export interface InfraImage {
+  src: string;
+  alt: string;
+  label: string;
+}
+
+export const infrastructureData = {
+  tag: "CAMPUS ARCHITECTURE",
+  heading: "Built for Inspiration & Open Learning",
+  highlightQuote:
+    "The red and beige sandstone building was designed and built keeping in mind the ideal environment for children, the philosophy of the school and evolving paradigms.",
+  paragraph1:
+    "The School is divided into two wings, with an open amphitheatre connecting them. This eight acre campus has a built-up area of four acres, while the rest of the space comprises a lush, green cover.",
+  paragraph2:
+    "The campus has sports fields, gardens, play areas and courtyards, with over 400 species of trees and plants. Surrounded by Vasant Kunj, the entire campus is challenge compliant with dedicated spaces for every activity.",
+  ctaText: "EXPLORE INFRASTRUCTURE",
+  ctaHref: "#infrastructure",
+  galleryCtaText: "VIEW PHOTO GALLERY",
+  galleryCtaHref: "#photo-gallery",
+  stackedImages: [
+    {
+      src: "/assets/infrastructure/infra2.jpg",
+      alt: "Vasant Valley Main Entrance Gate",
+      label: "Main Campus Facade",
+    },
+    {
+      src: "/assets/infrastructure/infra1.jpg",
+      alt: "Vasant Valley Sports Field and Sandstone Wings",
+      label: "Green Cover & Sports Fields",
+    },
+    {
+      src: "/assets/infrastructure/infra3.png",
+      alt: "Inner Courtyard and Student Banners",
+      label: "Inner Courtyards & Amphitheatre",
+    },
+  ] as InfraImage[],
+};
