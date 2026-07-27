@@ -10,7 +10,7 @@ export function ExpandablePillars() {
   const [activeId, setActiveId] = useState<string>(pillarsData[0].id);
 
   return (
-    <section className="bg-amber-300/20 py-16 sm:py-24 px-4 sm:px-8 overflow-hidden">
+    <section className="bg-amber-300/20 py-10 sm:py-14 px-4 sm:px-8 overflow-hidden">
       <div className="container-lg mx-auto">
         {/* Section Header */}
         <div className="mb-8 sm:mb-12 text-left">
@@ -24,7 +24,7 @@ export function ExpandablePillars() {
         </div>
 
         {/* Accordion Container */}
-        <div className="flex flex-col lg:flex-row h-auto lg:h-[620px] w-full gap-4 rounded-3xl p-3 bg-amber-300/20 backdrop-blur-md border border-amber-300/30 shadow-2xl">
+        <div className="flex flex-col lg:flex-row h-auto lg:h-[620px] w-full gap-1 rounded-2xl p-1 bg-amber-300/20 backdrop-blur-md border border-amber-300/30 shadow-2xl">
           {pillarsData.map((item) => {
             const isActive = activeId === item.id;
             const isMaroonBg = item.bgColor.includes("800020");
@@ -42,7 +42,7 @@ export function ExpandablePillars() {
                   mass: 0.8,
                 }}
                 className={cn(
-                  "relative flex flex-col justify-between rounded-2xl p-5 sm:p-8 cursor-pointer overflow-hidden transition-all duration-500 border",
+                  "relative flex flex-col justify-between rounded-xl p-5 sm:p-8 cursor-pointer overflow-hidden transition-all duration-500 border",
                   item.bgColor,
                   isActive
                     ? "lg:flex-[3.5] flex-1 border-white/20 shadow-xl"

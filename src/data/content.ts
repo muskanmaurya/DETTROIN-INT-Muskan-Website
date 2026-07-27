@@ -1,3 +1,8 @@
+import { BsYoutube } from 'react-icons/bs';
+import { LiaLinkedin } from 'react-icons/lia';
+import { BsInstagram } from 'react-icons/bs';
+import { FaFacebook } from "react-icons/fa";
+
 export interface NavItem {
   label: string;
   href: string;
@@ -115,3 +120,109 @@ export const pillarsData: PillarItem[] = [
     image: "/assets/HeroImages/image3.png",
   },
 ];
+
+export interface AnnouncementItem {
+  id: number;
+  tag: string;
+  title: string;
+  summary: string;
+  actionText?: string;
+  href?: string;
+}
+
+export const announcementsData: AnnouncementItem[] = [
+  {
+    id: 1,
+    tag: "CAMPUS EXPANSION",
+    title: "Announcing Vasant Valley School, Gurgaon",
+    summary:
+      "Expanding our 36-year legacy of educational excellence. The new Gurgaon campus will uphold our core ethos, high standards, and commitment to holistic child-centred development.",
+    actionText: "LEARN MORE",
+    href: "#gurgaon",
+  },
+  {
+    id: 2,
+    tag: "ACADEMIC DISCLOSURE",
+    title: "Class 12 CBSE Marksheets Available",
+    summary:
+      "Class XII All India Senior School Certificate Examination marksheets are ready for collection at the Senior School Office on working days between 10:00 AM and 3:00 PM.",
+    actionText: "VIEW OFFICE TIMINGS",
+    href: "#academics",
+  },
+  {
+    id: 3,
+    tag: "EXCELLENCE IN EDUCATION",
+    title: "Vasant Valley Centre for Excellence",
+    summary:
+      "A dedicated initiative drawing on 36 years of experience to nurture professional learning communities, mentor educators, and align academic practices with child-centred values.",
+    actionText: "EXPLORE CENTRE",
+    href: "#centre",
+  },
+];
+
+export interface FooterLink {
+  label: string;
+  href: string;
+}
+
+export interface FooterColumn {
+  title: string;
+  links: FooterLink[];
+}
+
+export const footerData = {
+  brand: {
+    name: "Vasant Valley School",
+    tagline: "Excellence in Deed",
+    description:
+      "Nurturing independent minds, ethical values, and original thinking in a process-focused, child-centred educational environment.",
+    address: "Sector C, Vasant Kunj, New Delhi 110070",
+    phone: "+91 11 41767940",
+    email: "info@vasantvalley.edu.in",
+  },
+  columns: [
+    {
+      title: "Quick Links",
+      links: [
+        { label: "Home", href: "#" },
+        { label: "Vision & Philosophy", href: "#vision" },
+        { label: "The Learning Experience", href: "#learning" },
+        { label: "International Curriculum", href: "#curriculum" },
+        { label: "Infrastructure", href: "#infrastructure" },
+      ],
+    },
+    {
+      title: "Academics & Life",
+      links: [
+        { label: "Special Education Needs", href: "#special-needs" },
+        { label: "Intra-School Programmes", href: "#intra-school" },
+        { label: "Inter-School Programmes", href: "#inter-school" },
+        { label: "A Day in School", href: "#a-day-in-school" },
+      ],
+    },
+    {
+      title: "Community",
+      links: [
+        { label: "About Us", href: "#about" },
+        { label: "Admissions", href: "#admissions" },
+        { label: "Announcements", href: "#announcements" },
+        { label: "News & Events", href: "#news" },
+      ],
+    },
+    {
+      title: "Portals & Legal",
+      links: [
+        { label: "Login", href: "#login" },
+        { label: "FAQs", href: "#faqs" },
+        { label: "Statutory Compliances", href: "#statutory" },
+        { label: "Privacy Policy", href: "#privacy" },
+      ],
+    },
+  ] as FooterColumn[],
+  socials: [
+    { name: "Facebook", href: "#", icon: "Facebook" },
+    { name: "Instagram", href: "#", icon: "Instagram" },
+    { name: "LinkedIn", href: "#", icon: "LinkedIn" },
+    { name: "YouTube", href: "#", icon: "YouTube" },
+  ],
+};

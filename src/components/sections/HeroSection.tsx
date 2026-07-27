@@ -34,7 +34,7 @@ export function HeroSection() {
                     </div>
 
                     {/* Clean Main Headline */}
-                    <h1 className="font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl leading-tight">
+                    <h1 className="font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl leading-tight">
                         Nurturing Independent Minds, <br />
                         <span className="text-[#800020]">Excellence in Deed.</span>
                     </h1>
