@@ -21,17 +21,16 @@ export function AnnouncementsSection() {
   return (
     <section ref={containerRef} className="relative h-[300vh] bg-[#5c0017]">
       {/* Sticky Full-Viewport Stage with Glassmorphic Ambient Glow */}
-      <div className="sticky top-0 flex h-screen w-full flex-col items-center justify-center px-6 sm:px-12 overflow-hidden">
-    
+      <div className="sticky top-0 flex min-h-screen w-full flex-col items-center justify-center px-4 sm:px-8 lg:px-12 overflow-hidden py-12">
 
-        <div className="container-md relative z-10 mx-auto flex max-w-3xl flex-col items-center text-center">
+        <div className="container-md relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center text-center">
           
-          {/* 1. Crest Logo (Fixed dimensioning prevents clipping behind top navbar) */}
+          {/* 1. Crest Logo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="mb-6 flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-white/95 p-3 shadow-2xl backdrop-blur-md border border-white/20"
+            className="mb-4 sm:mb-6 flex h-16 w-16 sm:h-20 sm:w-20 shrink-0 items-center justify-center rounded-2xl bg-white/95 p-3 shadow-2xl backdrop-blur-md border border-white/20"
           >
             <Image
               src="/assets/logo/no-bg-full-logo.png"
@@ -44,7 +43,7 @@ export function AnnouncementsSection() {
           </motion.div>
 
           {/* 2. Dynamic Sliding Content Frame */}
-          <div className="relative min-h-[280px] sm:min-h-[240px] w-full flex items-center justify-center">
+          <div className="relative min-h-[300px] sm:min-h-[260px] w-full flex items-center justify-center">
             {announcementsData.map((item, index) => (
               <AnnouncementCard
                 key={item.id}
@@ -56,7 +55,7 @@ export function AnnouncementsSection() {
           </div>
 
           {/* 3. Progress Step Dots */}
-          <div className="mt-8 flex items-center justify-center gap-3">
+          <div className="mt-6 sm:mt-8 flex items-center justify-center gap-3">
             {announcementsData.map((item, index) => (
               <ProgressDot
                 key={item.id}
@@ -70,7 +69,7 @@ export function AnnouncementsSection() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.7 }}
-            className="mt-6 text-[11px] font-semibold uppercase tracking-widest text-amber-200/70"
+            className="mt-4 sm:mt-6 text-[10px] sm:text-[11px] font-semibold uppercase tracking-widest text-amber-200/70"
           >
             Scroll down to cycle announcements
           </motion.p>
@@ -80,7 +79,7 @@ export function AnnouncementsSection() {
   );
 }
 
-// Sub-component handling clean text transitions & dark mode styling
+// Sub-component handling text transitions
 function AnnouncementCard({
   item,
   index,
@@ -109,16 +108,15 @@ function AnnouncementCard({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="absolute inset-0 flex flex-col items-center mt-35 justify-center"
+          className="absolute inset-0 flex flex-col items-center justify-center w-full px-2"
         >
-
           {/* Main Title */}
-          <h3 className="mt-4  font-display text-2xl sm:text-2xl lg:text-4xl md:min-w-xl sm:max-w-l font-bold tracking-tight text-white min-w-2xl leading-tight">
+          <h3 className="font-display text-xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white w-full max-w-2xl leading-tight">
             {item.title}
           </h3>
 
           {/* Description Body */}
-          <p className="mt-4 text-base mb-5 sm:text-md leading-relaxed text-white/85 min-w-2xl sm:max-w-l md:min-w-xl font-normal">
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base lg:text-lg leading-relaxed text-white/85 w-full max-w-2xl font-normal">
             {item.summary}
           </p>
 
@@ -126,7 +124,7 @@ function AnnouncementCard({
           {item.actionText && (
             <a
               href={item.href || "#"}
-              className="mt-30  inline-flex items-center gap-2 font-bold text-xs sm:text-sm tracking-wider uppercase text-amber-300 hover:text-white transition-colors group"
+              className="mt-6 sm:mt-8 inline-flex items-center gap-2 font-bold text-xs sm:text-sm tracking-wider uppercase text-amber-300 hover:text-white transition-colors group"
             >
               <span className="transition-transform group-hover:translate-x-1">→</span>
               <span className="border-b border-amber-300/50 group-hover:border-white">
