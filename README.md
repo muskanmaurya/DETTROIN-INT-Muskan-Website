@@ -48,41 +48,45 @@ The objective of this project is to transform the classic Vasant Valley School w
 
 ## 📸 Section Screenshots
 
-### 1. Hero Section & Navigation
-*Dynamic full-width video background with frosted glassmorphic dropdown navigation and crisp slogan overlays.*
-![Hero Section](./public/assets/screenshots/hero-section.png)
+### 1. Hero Section
+*Full-viewport backdrop featuring the school motto, primary CTA button, and glassmorphic top navigation header.*
+![Hero Section](./public/assets/screenshots/hero-section.jpg)
 
 ### 2. About Us & Leadership
-*Dedicated history narrative highlighting founders Mr. Aroon Purie and Mrs. Rekha Purie alongside executive portrait cards.*
-![About Section](./public/assets/screenshots/about-section.png)
+*Institutional narrative introducing founders Mr. Aroon Purie and Mrs. Rekha Purie alongside executive portrait cards.*
+![About Section](./public/assets/screenshots/about-section.jpg)
 
 ### 3. Pillars of Excellence
-*Interactive spring-based accordion with student photography and dynamic quote expansion.*
-![Pillars Section](./public/assets/screenshots/pillars-section.png)
+*Interactive spring accordion showcasing Vasant Valley's foundational philosophy and student engagement.*
+![Pillars Section](./public/assets/screenshots/pillers-section.jpg)
 
 ### 4. Interactive Scroll Announcements
-*Scroll-triggered pinned announcement engine displaying institutional updates on a dark maroon backdrop.*
-![Announcements Section](./public/assets/screenshots/announcements-section.png)
+*Pinned scroll stage displaying institutional updates and the Vasant Valley Centre for Excellence on deep maroon.*
+![Announcements Section](./public/assets/screenshots/announcement-section.png)
 
-### 5. Campus Infrastructure
-*Staggered zigzag architectural gallery highlighting campus fields, courtyards, and sandstone buildings.*
-![Infrastructure Section](./public/assets/screenshots/infrastructure-section.png)
+### 5. Campus Architecture & Infrastructure
+*Staggered 3-tier building showcase highlighting the sports fields, sandstone wings, and iconic main gate.*
+![Infrastructure Section](./public/assets/screenshots/infrastructure-section.jpg)
 
 ### 6. Timeline of Recent Events
-*Beaded event timeline with card expansion physics and archive links.*
-![Timeline Section](./public/assets/screenshots/timeline-section.png)
+*Beaded event rail featuring Synapse 2026, Laissez Faire, and Zonal Tournaments with dynamic card expansion.*
+![Timeline Section](./public/assets/screenshots/timeline-section.jpg)
 
-### 7. Life & Socials Gallery
-*Infinite dual-row marquee floating images with interactive hover overlays.*
-![Socials Section](./public/assets/screenshots/socials-section.png)
+### 7. Life & Community Marquee
+*Infinite dual-row floating photo marquee illustrating daily campus activities, labs, and student achievements.*
+![Socials Section](./public/assets/screenshots/socials-section.jpg)
 
-### 8. Reviews & Community Testimonials
-*Responsive testimonial card grid displaying parent ratings and alumni experiences.*
+### 8. Voices of Our Community (Reviews)
+*High-contrast parent and alumni testimonial card grid with star ratings and relation badges.*
 ![Reviews Section](./public/assets/screenshots/reviews-section.png)
 
-### 9. FAQ & Admissions Contact Desk
-*Integrated Web3Forms contact engine paired with an accessible FAQ accordion.*
+### 9. FAQ & Admissions Help Desk
+*Light glassmorphic admissions inquiry form paired with an interactive zero-padded FAQ accordion.*
 ![FAQ Section](./public/assets/screenshots/faq-section.png)
+
+### 10. Footer & Legal Information
+*Comprehensive 5-column glassmorphic footer featuring quick links, contact info, and legal policies.*
+![Footer Section](./public/assets/screenshots/footer.png)
 
 ---
 
