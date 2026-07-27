@@ -24,7 +24,7 @@ export function ExpandablePillars() {
         </div>
 
         {/* Accordion Container */}
-        <div className="flex flex-col lg:flex-row h-auto lg:h-[620px] w-full gap-1 rounded-2xl p-1 bg-amber-300/20 backdrop-blur-md border border-amber-300/30 shadow-2xl">
+        <div className="flex flex-col lg:flex-row h-auto lg:h-[620px] w-full gap-1 rounded-2xl p-1 bg-[#800020]/40 backdrop-blur-md border border-amber-300/30 shadow-2xl">
           {pillarsData.map((item) => {
             const isActive = activeId === item.id;
             const isMaroonBg = item.bgColor.includes("800020");

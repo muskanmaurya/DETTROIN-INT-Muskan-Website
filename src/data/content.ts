@@ -295,3 +295,34 @@ export const socialGalleryData: SocialGalleryItem[] = [
   }
 ];
 
+
+export interface LeadershipMember {
+  name: string;
+  role: string;
+  image: string;
+}
+
+export const aboutData = {
+  tag: "ABOUT US",
+  heading: "Nurturing Independent Minds Since 1990",
+  mainQuote:
+    "Run by the Education Today Trust, Vasant Valley School is the realisation of Mr. Aroon Purie and Mrs. Rekha Purie's vision of the ideal school experience for children.",
+  brief:
+    "Vasant Valley School was established in 1990 as an initiative of the Education Today Trust, beginning its journey with around 200 students and 16 teachers in July 1990. It is a self-financing inclusive day school spread over eight acres of land in Vasant Kunj, New Delhi.",
+  visionPhilosophy:
+    "Mr. and Mrs. Purie envisioned a learning experience in which the Arts and Sports are as important as academic learning, creating a paradigm where being a good citizen is as important as being a good student—encouraging every child to actualise their innate and unique potential.",
+  ctaText: "ABOUT US",
+  ctaHref: "#about-full",
+  leadership: [
+    {
+      name: "Mrs. Rekha Purie",
+      role: "Chairperson, Vasant Valley School",
+      image: "/assets/Teachers/Rekha-Purie-1.jpg",
+    },
+    {
+      name: "Mr. Aroon Purie",
+      role: "Founder, Education Today Trust",
+      image: "/assets/Teachers/Aroon-Purie-2.jpg",
+    },
+  ] as LeadershipMember[],
+};
