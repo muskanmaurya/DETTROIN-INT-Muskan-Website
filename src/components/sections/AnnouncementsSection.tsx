@@ -111,12 +111,12 @@ function AnnouncementCard({
           className="absolute inset-0 flex flex-col items-center justify-center w-full px-2"
         >
           {/* Main Title */}
-          <h3 className="font-display text-xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white w-full max-w-2xl leading-tight">
+          <h3 className="font-display text-xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white w-full max-w-2xl lg:max-w-3xl leading-tight">
             {item.title}
           </h3>
 
           {/* Description Body */}
-          <p className="mt-3 sm:mt-4 text-sm sm:text-base lg:text-lg leading-relaxed text-white/85 w-full max-w-2xl font-normal">
+          <p className="mt-3 sm:mt-4 text-sm sm:text-base lg:text-lg leading-relaxed text-white/85 w-full max-w-2xl lg:max-w-3xl font-normal">
             {item.summary}
           </p>
 
