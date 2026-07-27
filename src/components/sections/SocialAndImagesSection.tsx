@@ -13,7 +13,7 @@ export function SocialAndImagesSection() {
   ];
 
   return (
-    <section className="relative bg-[#FAFAF8] py-16 sm:py-20 lg:py-24 px-4 sm:px-8 overflow-hidden">
+    <section className="relative bg-amber-300/20 py-16 sm:py-20 lg:py-24 px-4 sm:px-8 overflow-hidden">
       
       {/* Header Container */}
       <div className="mb-8 sm:mb-12 max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 text-left">
@@ -34,8 +34,8 @@ export function SocialAndImagesSection() {
       <div className="relative mx-auto w-full max-w-7xl overflow-hidden py-4 sm:py-6">
 
         {/* Responsive Side Vignette Overlays */}
-        <div className="absolute inset-y-0 left-0 z-20 w-12 sm:w-24 lg:w-36 bg-gradient-to-r from-[#FAFAF8] via-[#FAFAF8]/80 to-transparent pointer-events-none" />
-        <div className="absolute inset-y-0 right-0 z-20 w-12 sm:w-24 lg:w-36 bg-gradient-to-l from-[#FAFAF8] via-[#FAFAF8]/80 to-transparent pointer-events-none" />
+        <div className="absolute inset-y-0 left-0 z-20 w-12 sm:w-24 lg:w-36 bg-gradient-to-r from-amber-300/20 via-amber-300/10 to-transparent pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 z-20 w-12 sm:w-24 lg:w-36 bg-gradient-to-l from-amber-300/20 via-amber-300/10 to-transparent pointer-events-none" />
 
         {/* Marquee Container with Dual Rows */}
         <div className="flex flex-col gap-2 sm:gap-3">
@@ -101,13 +101,10 @@ function GalleryCard({ item }: { item: SocialGalleryItem }) {
       className={cn(
         "group relative overflow-hidden rounded-md border border-slate-200/80 bg-white shadow-md transition-all duration-500 hover:shadow-xl hover:border-[#800020]/40 shrink-0",
         
-        // 1. Mobile (< 640px): 224px Wide x 256px Tall
         "w-56 h-64",
         
-        // 2. Tablet (640px - 1024px): 288px Wide x 320px Tall
         "sm:w-72 sm:h-80",
         
-        // 3. Desktop (> 1024px): 384px Wide x 384px Tall
         "lg:w-96 lg:h-96"
       )}
     >

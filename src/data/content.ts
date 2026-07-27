@@ -92,7 +92,7 @@ export const pillarsData: PillarItem[] = [
       "The School's motto sets the standard for Vasant Valley School. Individualized attention for each student, a 'process-focused' learning framework, equity of all stakeholders and commitment to society are the pillars of the School's philosophy. We believe that education is an enjoyable and interactive process.",
     linkText: "EXPLORE VISION",
     href: "#vision",
-    bgColor: "bg-[#FAFAF8]", // Cream canvas
+    bgColor: "bg-amber-300/5", // Cream canvas
     image: "/assets/HeroImages/image1.png",
   },
   {
@@ -116,7 +116,7 @@ export const pillarsData: PillarItem[] = [
       "While high academic achievement is a priority, the school aims to create a community of well-rounded individuals, who are compassionate and confident. This fosters a spirit of cooperation and mutual respect among the students and teachers.",
     linkText: "LEARNING EXPERIENCE",
     href: "#learning-experience",
-    bgColor: "bg-[#FAFAF8]", // Deep Slate
+    bgColor: "bg-amber-300/5", // Deep Slate
     image: "/assets/HeroImages/image3.png",
   },
 ];
@@ -394,7 +394,7 @@ export const infrastructureData = {
     {
       src: "/assets/infrastructure/infra2.jpg",
       alt: "Vasant Valley Main Entrance Gate",
-      label: "Main Campus Facade",
+      label: "Academic Courtyard & Art Wings",
     },
     {
       src: "/assets/infrastructure/infra1.jpg",
@@ -404,7 +404,7 @@ export const infrastructureData = {
     {
       src: "/assets/infrastructure/infra3.png",
       alt: "Inner Courtyard and Student Banners",
-      label: "Inner Courtyards & Amphitheatre",
+      label: "Main Gate & Clock Tower",
     },
   ] as InfraImage[],
 };
@@ -441,4 +441,45 @@ export const faqData: FAQItem[] = [
     answer:
       "Yes, Vasant Valley operates a fleet of air-conditioned, GPS-tracked buses covering major routes across South Delhi, Gurgaon, and neighboring NCR regions, accompanied by trained staff.",
   },
+];
+
+
+export interface TestimonialItem {
+  id: string;
+  quote: string;
+  author: string;
+  role: string; // e.g., "Parent of Class XII Student", "Alumnus (Batch of 2018)"
+  rating: number;
+  batchOrRelation: string;
+  avatar?: string;
+}
+
+export const testimonialsData: TestimonialItem[] = [
+  {
+    id: "review-1",
+    quote:
+      "Vasant Valley doesn't just focus on academic marksheets—it builds independent, compassionate human beings. The process-focused learning framework gave my daughter the confidence to speak up and lead.",
+    author: "Ritu Malhotra",
+    role: "Parent of Class XII Student",
+    rating: 5,
+    batchOrRelation: "Parent since 2014",
+  },
+  {
+    id: "review-2",
+    quote:
+      "The ethos instilled in us during our years at school remains our guiding light. From sports fields to international forums, Vasant Valley taught us that excellence is truly in deed.",
+    author: "Kabir Mehta",
+    role: "Rhodes Scholar & Alumnus",
+    rating: 5,
+    batchOrRelation: "Batch of 2018",
+  },
+  {
+    id: "review-3",
+    quote:
+      "The Special Education Needs (SEN) program and individual attention provided by teachers are world-class. Every child’s unique potential is celebrated here without comparison.",
+    author: "Dr. Sunita Vasudev",
+    role: "Parent of Middle School Student",
+    rating: 5,
+    batchOrRelation: "Parent since 2019",
+  }
 ];

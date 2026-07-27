@@ -6,11 +6,10 @@ import { aboutData } from "../../data/content";
 
 export function AboutUsSection() {
   return (
-    <section id="about" className="bg-[#FAFAF8] py-20 sm:py-28 px-4 sm:px-8">
+    <section id="about" className="bg-amber-300/20 py-20 sm:py-28 px-4 sm:px-8">
       <div className="container-lg mx-auto max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* LEFT COLUMN: Vertical Leadership Cards (5 Cols on Desktop) */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -23,7 +22,6 @@ export function AboutUsSection() {
                 key={person.name}
                 className="group relative flex flex-col overflow-hidden rounded-xl border border-slate-200/80 bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:border-[#800020]/40"
               >
-                {/* 1. TOP 5/8 (62.5%) SECTION: Tall Vertical Image Frame */}
                 <div className="relative h-72 sm:h-80 w-full overflow-hidden bg-slate-100 border-b border-slate-100">
                   <Image
                     src={person.image}
@@ -41,8 +39,7 @@ export function AboutUsSection() {
                   </span>
                 </div>
 
-                {/* 2. BOTTOM 3/8 SECTION: Leadership Meta Info */}
-                <div className="flex flex-col justify-between p-5 bg-white flex-1 space-y-1">
+                <div className="flex flex-col justify-between p-5 bg-amber-300/5 flex-1 space-y-1">
                   <div>
                     <h4 className="font-display text-lg font-bold text-slate-900 group-hover:text-[#800020] transition-colors leading-snug">
                       {person.name}
@@ -64,7 +61,6 @@ export function AboutUsSection() {
             ))}
           </motion.div>
 
-          {/* RIGHT COLUMN: About Copy (7 Cols on Desktop) */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}

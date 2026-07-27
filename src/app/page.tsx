@@ -9,6 +9,7 @@ import {InfrastructureSection} from "@/components/sections/InfrastructureSection
 import {SocialAndImagesSection} from "@/components/sections/SocialAndImagesSection";
 import {TimeLineSection} from "@/components/sections/TimeLineSection";
 import {FAQSection} from "@/components/sections/FAQandContactSection";
+import { ReviewsSection } from "@/components/sections/ReviewsSection";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <AboutUsSection/>
         <TimeLineSection/>
         <SocialAndImagesSection/>
+        <ReviewsSection/>
         <FAQSection/>
       </main>
       <Footer />

@@ -79,7 +79,6 @@ export function AnnouncementsSection() {
   );
 }
 
-// Sub-component handling text transitions
 function AnnouncementCard({
   item,
   index,

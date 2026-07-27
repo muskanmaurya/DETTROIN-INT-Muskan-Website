@@ -66,7 +66,7 @@ export function TimeLineSection() {
                   className={cn(
                     "relative flex flex-col justify-between rounded-xl p-6 sm:p-7 transition-all duration-300 cursor-pointer overflow-hidden border shadow-xl",
                     // Light Canvas Card Styling on Dark Maroon Canvas
-                    "bg-[#FAFAF8] text-slate-900 border-amber-200/60",
+                    "bg-white text-slate-900 border-amber-200/60",
                     isHovered
                       ? "md:flex-[1.8] ring-4 ring-amber-300/40 shadow-2xl scale-[1.01]"
                       : "md:flex-[1] opacity-95 hover:opacity-100"

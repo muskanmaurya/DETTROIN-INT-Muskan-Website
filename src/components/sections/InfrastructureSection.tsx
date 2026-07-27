@@ -6,7 +6,7 @@ import { infrastructureData } from "../../data/content";
 
 export function InfrastructureSection() {
   return (
-    <section className="relative bg-[#5c0017] py-20 sm:py-28 px-4 sm:px-8 overflow-hidden">
+    <section className="relative bg-[#5c0017] py-10 sm:py-28 px-4 sm:px-8 overflow-hidden">
       {/* Soft Ambient Background Glow */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 h-[500px] w-[500px] rounded-full bg-[#800020] opacity-30 blur-3xl pointer-events-none" />
 
@@ -21,18 +21,17 @@ export function InfrastructureSection() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="lg:col-span-4 space-y-6"
           >
-            {/* Section Tag */}
-            <div className="inline-flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-amber-300" />
-              <span className="text-xs font-bold uppercase tracking-widest text-amber-300">
-                {infrastructureData.tag}
-              </span>
-            </div>
-
-            {/* Main Title */}
-            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight tracking-tight">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div className="text-left">
+            <span className="text-xs font-bold uppercase tracking-widest text-amber-300">
+              {infrastructureData.tag}
+            </span>
+            <h2 className="mt-2 text-3xl sm:text-4xl font-display font-extrabold text-white tracking-tight">
               {infrastructureData.heading}
             </h2>
+            <div className="mt-2 h-1 w-16 bg-amber-300 rounded-full" />
+          </div>
+          </div>
 
             {/* Sandstone Quote Highlight */}
             <p className="text-base sm:text-lg font-bold leading-relaxed text-amber-300 border-l-2 border-amber-300/40 pl-4 py-1">
@@ -58,16 +57,6 @@ export function InfrastructureSection() {
                   {infrastructureData.ctaText}
                 </span>
               </a>
-
-              <a
-                href={infrastructureData.galleryCtaHref}
-                className="group inline-flex items-center gap-2 font-bold text-xs sm:text-sm tracking-wider uppercase text-white/80 hover:text-amber-300 transition-colors"
-              >
-                <span>📷</span>
-                <span className="border-b border-white/20 pb-0.5 group-hover:border-amber-300">
-                  {infrastructureData.galleryCtaText}
-                </span>
-              </a>
             </div>
           </motion.div>
 
@@ -80,10 +69,6 @@ export function InfrastructureSection() {
             className="lg:col-span-6 relative flex flex-col gap-6 sm:gap-8 py-4"
           >
             {infrastructureData.stackedImages.map((img, idx) => {
-              // Zigzag Alignment Logic:
-              // Index 0: Left aligned (mr-auto w-[85%-90%])
-              // Index 1: Right aligned (ml-auto w-[85%-90%])
-              // Index 2: Left aligned (mr-auto w-[85%-90%])
               const zigzagAlign = [
                 "self-start mr-auto w-full sm:w-[90%]",
                 "self-end ml-auto w-full sm:w-[90%]",

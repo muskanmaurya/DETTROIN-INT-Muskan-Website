@@ -12,7 +12,6 @@ export function ExpandablePillars() {
   return (
     <section className="bg-amber-300/20 py-10 sm:py-14 px-4 sm:px-8 overflow-hidden">
       <div className="container-lg mx-auto">
-        {/* Section Header */}
         <div className="mb-8 sm:mb-12 text-left">
           <span className="text-xs font-semibold uppercase tracking-widest text-amber-400">
             Pillars of Excellence
@@ -24,7 +23,7 @@ export function ExpandablePillars() {
         </div>
 
         {/* Accordion Container */}
-        <div className="flex flex-col lg:flex-row h-auto lg:h-[620px] w-full gap-1 rounded-2xl p-1 bg-[#800020]/40 backdrop-blur-md border border-amber-300/30 shadow-2xl">
+        <div className="flex flex-col lg:flex-row h-auto lg:h-[620px] w-full gap-1 rounded-2xl p-1 backdrop-blur-md bg-[#FAFAF8] border-5 border-[#800020]/40 shadow-2xl">
           {pillarsData.map((item) => {
             const isActive = activeId === item.id;
             const isMaroonBg = item.bgColor.includes("800020");

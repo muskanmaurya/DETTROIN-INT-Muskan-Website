@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { navItems } from "../../data/content";
 import { cn } from "../../lib/cn";
+import { IoCall } from "react-icons/io5";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -51,9 +52,7 @@ export function Navbar() {
               href="#contact"
               className="hidden items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-medium text-white backdrop-blur-sm transition-all hover:border-amber-300 hover:bg-amber-300/20 md:flex"
             >
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
-                <path d="M3.5 2A1.5 1.5 0 002 3.5v9A1.5 1.5 0 003.5 14h9a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0012.5 2h-9z" />
-              </svg>
+              <span> <IoCall/>  </span>
               Contact Us
             </a>
 

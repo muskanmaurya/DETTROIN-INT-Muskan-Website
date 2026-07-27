@@ -66,15 +66,14 @@ export function FAQSection() {
   };
 
   return (
-    <section id="contact" className="bg-[#FAFAF8] py-20 sm:py-28 px-4 sm:px-8">
+    <section id="contact" className="bg-amber-300/20 sm:py-28 px-4 sm:px-8">
       <div className="container-lg mx-auto max-w-6xl">
-        
-        {/* Section Header */}
-        <div className="mb-12 text-left">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#800020]">
+
+        <div className="mb-8 sm:mb-12 text-left">
+          <span className="text-xs font-semibold uppercase tracking-widest text-amber-400">
             GET IN TOUCH
           </span>
-          <h2 className="mt-1 text-3xl sm:text-4xl font-display font-extrabold text-slate-900">
+          <h2 className="mt-2 text-2xl sm:text-4xl font-display font-extrabold text-[#800020]">
             Frequently Asked Questions & Contact
           </h2>
           <div className="mt-2 h-1 w-16 bg-[#800020] rounded-full" />
@@ -83,7 +82,7 @@ export function FAQSection() {
         <div className="grid gap-12 lg:grid-cols-12 items-start">
           
           <div className="lg:col-span-5">
-            <div className="rounded-md border border-slate-200/80 bg-white p-6 sm:p-8 shadow-xl shadow-slate-200/50">
+            <div className="rounded-md border bg-[#FAFAF8] border-slate-200/80 p-6 sm:p-8 shadow-xl shadow-slate-200/50">
               <div className="mb-6 space-y-1">
                 <span className="inline-block rounded-full bg-[#800020]/10 border border-[#800020]/20 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#800020]">
                   Admissions & Help Desk
@@ -97,7 +96,7 @@ export function FAQSection() {
               </div>
 
               <form onSubmit={handleSubmit} id="contact-form" className="space-y-4">
-                <div className="space-y-3">
+                <div className="space-y-3 ">
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
                       Parent / Guardian Name *
