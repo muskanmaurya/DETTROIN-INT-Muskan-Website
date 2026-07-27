@@ -408,3 +408,37 @@ export const infrastructureData = {
     },
   ] as InfraImage[],
 };
+
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export const faqData: FAQItem[] = [
+  {
+    question: "What is the admission procedure for the upcoming academic session?",
+    answer:
+      "Admissions open annually based on available vacancies. Parents can register online via our portal or collect forms directly from the school admissions office. Selected candidates are invited for an interaction session.",
+  },
+  {
+    question: "What are the school operating hours and office timings?",
+    answer:
+      "The main school operates from 8:00 AM to 2:30 PM, Monday through Friday. The administrative and senior school offices remain open for inquiries on working days from 9:00 AM to 3:30 PM.",
+  },
+  {
+    question: "How does Vasant Valley support Special Education Needs (SEN)?",
+    answer:
+      "We believe in inclusive education. Our dedicated Learning Support Department provides tailored individual education plans (IEPs), specialized counseling, and continuous mentoring for students with diverse learning needs.",
+  },
+  {
+    question: "What sports and co-curricular facilities are available on campus?",
+    answer:
+      "Spanning eight acres, our campus features international-standard tennis courts, basketball courts, athletics fields, indoor gymnastics centers, and dedicated performing arts and robotics studios.",
+  },
+  {
+    question: "Does the school provide transport facilities?",
+    answer:
+      "Yes, Vasant Valley operates a fleet of air-conditioned, GPS-tracked buses covering major routes across South Delhi, Gurgaon, and neighboring NCR regions, accompanied by trained staff.",
+  },
+];

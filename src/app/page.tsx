@@ -8,6 +8,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import {InfrastructureSection} from "@/components/sections/InfrastructureSection";
 import {SocialAndImagesSection} from "@/components/sections/SocialAndImagesSection";
 import {TimeLineSection} from "@/components/sections/TimeLineSection";
+import {FAQSection} from "@/components/sections/FAQandContactSection";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <AboutUsSection/>
         <TimeLineSection/>
         <SocialAndImagesSection/>
+        <FAQSection/>
       </main>
       <Footer />
     </SmoothScroll>
