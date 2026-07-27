@@ -226,3 +226,72 @@ export const footerData = {
     { name: "YouTube", href: "#", icon: "YouTube" },
   ],
 };
+
+export interface SocialGalleryItem {
+  id: string;
+  src: string;
+  alt: string;
+  caption: string;
+  likes?: string;
+  aspect: "aspect-[3/4]" | "aspect-square" | "aspect-[4/5]";
+}
+
+export const socialGalleryData: SocialGalleryItem[] = [
+  {
+    id: "gal-1",
+    src: "/assets/HeroImages/image5.jpeg",
+    alt: "Vasant Valley Campus Sports Day",
+    caption: "Inter-House Athletics 🏆",
+    likes: "248",
+    aspect: "aspect-[3/4]",
+  },
+  {
+    id: "gal-2",
+    src: "/assets/HeroImages/image6.jpeg",
+    alt: "Classroom Learning",
+    caption: "Robotics & Innovation Lab 🤖",
+    likes: "192",
+    aspect: "aspect-square",
+  },
+  {
+    id: "gal-3",
+    src: "/assets/HeroImages/image7.jpeg",
+    alt: "Students in Corridor",
+    caption: "Morning Campus Vibes ✨",
+    likes: "310",
+    aspect: "aspect-[4/5]",
+  },
+  {
+    id: "gal-4",
+    src: "/assets/HeroImages/image8.jpeg",
+    alt: "Annual Day Music Performance",
+    caption: "Synapse Cultural Fest 🎭",
+    likes: "412",
+    aspect: "aspect-[3/4]",
+  },
+  {
+    id: "gal-5",
+    src: "/assets/HeroImages/image9.jpeg",
+    alt: "Art & Sculpture Workshop",
+    caption: "Excellence in Creative Arts 🎨",
+    likes: "185",
+    aspect: "aspect-square",
+  },
+  {
+    id: "gal-6",
+    src: "/assets/HeroImages/image10.jpeg",
+    alt: "Library & Reading Hub",
+    caption: "Knowledge in Focus 📚",
+    likes: "275",
+    aspect: "aspect-[4/5]",
+  },
+  {
+    id: "gal-6",
+    src: "/assets/HeroImages/image11.jpeg",
+    alt: "Library & Reading Hub",
+    caption: "Knowledge in Focus 📚",
+    likes: "275",
+    aspect: "aspect-[4/5]",
+  }
+];
+
