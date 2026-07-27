@@ -17,8 +17,8 @@ export default function Home() {
         <HeroSection /> 
         <AnnouncementsSection />
         <ExpandablePillars /> 
-        <AboutUsSection/>
         <InfrastructureSection/>
+        <AboutUsSection/>
         <TimeLineSection/>
         <SocialAndImagesSection/>
       </main>
