@@ -92,7 +92,7 @@ export const pillarsData: PillarItem[] = [
       "The School's motto sets the standard for Vasant Valley School. Individualized attention for each student, a 'process-focused' learning framework, equity of all stakeholders and commitment to society are the pillars of the School's philosophy. We believe that education is an enjoyable and interactive process.",
     linkText: "EXPLORE VISION",
     href: "#vision",
-    bgColor: "bg-amber-300/5", // Cream canvas
+    bgColor: "bg-[#800020]", // Cream canvas
     image: "/assets/HeroImages/image1.png",
   },
   {
@@ -104,7 +104,7 @@ export const pillarsData: PillarItem[] = [
       "The school day comprises academic and nonacademic Learning Experiences and is planned with special focus on the developmental needs of our students. The entire Campus is a 'Classroom' and learning is continuous.",
     linkText: "A DAY IN SCHOOL",
     href: "#day-in-school",
-    bgColor: "bg-[#800020]", // Brand Maroon
+    bgColor: "bg-[#FAFAF8]", // Brand Maroon
     image: "/assets/HeroImages/image2.png",
   },
   {
@@ -116,7 +116,7 @@ export const pillarsData: PillarItem[] = [
       "While high academic achievement is a priority, the school aims to create a community of well-rounded individuals, who are compassionate and confident. This fosters a spirit of cooperation and mutual respect among the students and teachers.",
     linkText: "LEARNING EXPERIENCE",
     href: "#learning-experience",
-    bgColor: "bg-amber-300/5", // Deep Slate
+    bgColor: "bg-[#800020]", // Deep Slate
     image: "/assets/HeroImages/image3.png",
   },
 ];
@@ -185,7 +185,7 @@ export const footerData = {
       title: "Quick Links",
       links: [
         { label: "Home", href: "#" },
-        { label: "Vision & Philosophy", href: "#vision" },
+        { label: "Vision & Philosophy", href: "#about" },
         { label: "The Learning Experience", href: "#learning" },
         { label: "International Curriculum", href: "#curriculum" },
         { label: "Infrastructure", href: "#infrastructure" },
@@ -213,7 +213,7 @@ export const footerData = {
       title: "Portals & Legal",
       links: [
         { label: "Login", href: "#login" },
-        { label: "FAQs", href: "#faqs" },
+        { label: "FAQs", href: "#contact" },
         { label: "Statutory Compliances", href: "#statutory" },
         { label: "Privacy Policy", href: "#privacy" },
       ],
@@ -483,3 +483,74 @@ export const testimonialsData: TestimonialItem[] = [
     batchOrRelation: "Parent since 2019",
   }
 ];
+
+export interface NavSubLink {
+  label: string;
+  href: string;
+}
+
+export interface NavSection {
+  title: string;
+  tag: string;
+  links: NavSubLink[];
+  highlight?: string;
+}
+
+export const navigationData: Record<string, NavSection> = {
+  about: {
+    title: "About Us",
+    tag: "ABOUT US SECTION",
+    highlight: "36+ Years of Excellence in Education",
+    links: [
+      { label: "Vision & Philosophy", href: "#about" },
+      { label: "School Profile", href: "#about" },
+      { label: "A Day in School", href: "#life-at-vasant-valley" },
+      { label: "Vasant Valley Centre for Excellence", href: "#announcements" },
+    ],
+  },
+  academics: {
+    title: "Academics",
+    tag: "ACADEMICS SECTION",
+    highlight: "Child-Centred & Process-Focused Learning",
+    links: [
+      { label: "The Learning Experience", href: "#pillars" },
+      { label: "International Curriculum", href: "#pillars" },
+      { label: "Special Education Needs", href: "#contact" },
+      { label: "College Placements", href: "#reviews" },
+    ],
+  },
+  programmes: {
+    title: "Programmes",
+    tag: "PROGRAMMES SECTION",
+    links: [
+      { label: "Intra-School Programmes", href: "#timeline" },
+      { label: "Inter-School Programmes", href: "#timeline" },
+    ],
+  },
+  campus: {
+    title: "Campus",
+    tag: "CAMPUS SECTION",
+    links: [
+      { label: "Infrastructure", href: "#infrastructure" },
+      { label: "Gurgaon Campus", href: "#announcements" },
+    ],
+  },
+  community: {
+    title: "Community",
+    tag: "COMMUNITY SECTION",
+    links: [
+      { label: "Announcements", href: "#announcements" },
+      { label: "News & Events", href: "#timeline" },
+      { label: "Alumni Connect", href: "#reviews" },
+      { label: "Careers", href: "#contact" },
+    ],
+  },
+  admissions: {
+    title: "Admissions & FAQs",
+    tag: "ADMISSIONS & FAQS SECTION",
+    links: [
+      { label: "Admissions Process", href: "#contact" },
+      { label: "FAQs", href: "#contact" },
+    ],
+  },
+};

@@ -18,7 +18,7 @@ export function HeroSection() {
                 >
                     <source src="/videos/herovideo.mp4" type="video/mp4" />
                 </video>
-                <div className="absolute inset-0 bg-gradient-to-r from-white/50 via-white/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/15 to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-500/60 via-transparent to-gray-400/30" />
             </div>
 
@@ -52,12 +52,7 @@ export function HeroSection() {
                         >
                             Explore Our Vision →
                         </a>
-                        <a
-                            href="#portal"
-                            className="rounded-full border border-white/30 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition-all hover:bg-white/20 hover:border-white"
-                        >
-                            Parent Portal
-                        </a>
+                    
                     </div>
 
                 </div>

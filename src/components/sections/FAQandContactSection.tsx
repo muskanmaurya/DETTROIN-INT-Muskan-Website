@@ -66,11 +66,12 @@ export function FAQSection() {
   };
 
   return (
-    <section id="contact" className="bg-amber-300/20 sm:py-28 px-4 sm:px-8">
+    <section id="contact" className="bg-amber-300/20 py-20 sm:py-28 px-4 sm:px-8">
       <div className="container-lg mx-auto max-w-6xl">
 
+        {/* Section Header */}
         <div className="mb-8 sm:mb-12 text-left">
-          <span className="text-xs font-semibold uppercase tracking-widest text-amber-400">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#800020]">
             GET IN TOUCH
           </span>
           <h2 className="mt-2 text-2xl sm:text-4xl font-display font-extrabold text-[#800020]">
@@ -79,10 +80,11 @@ export function FAQSection() {
           <div className="mt-2 h-1 w-16 bg-[#800020] rounded-full" />
         </div>
 
-        <div className="grid gap-12 lg:grid-cols-12 items-start">
+        <div className="grid gap-10 lg:grid-cols-12 items-start">
           
+          {/* Left Column: Glassmorphic Contact Card */}
           <div className="lg:col-span-5">
-            <div className="rounded-md border bg-[#FAFAF8] border-slate-200/80 p-6 sm:p-8 shadow-xl shadow-slate-200/50">
+            <div className="rounded-3xl border border-white/80 bg-white/70 p-6 sm:p-8 shadow-xl shadow-amber-900/5 backdrop-blur-md">
               <div className="mb-6 space-y-1">
                 <span className="inline-block rounded-full bg-[#800020]/10 border border-[#800020]/20 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#800020]">
                   Admissions & Help Desk
@@ -90,15 +92,15 @@ export function FAQSection() {
                 <h3 className="font-display text-2xl font-bold text-slate-900">
                   Connect with Our Desk
                 </h3>
-                <p className="text-xs text-slate-500">
+                <p className="text-xs text-slate-600 font-normal">
                   Have specific queries about admissions or school life? Send us a message.
                 </p>
               </div>
 
               <form onSubmit={handleSubmit} id="contact-form" className="space-y-4">
-                <div className="space-y-3 ">
+                <div className="space-y-3">
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+                    <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">
                       Parent / Guardian Name *
                     </label>
                     <input
@@ -106,13 +108,13 @@ export function FAQSection() {
                       name="name"
                       placeholder="e.g. Ananya Sharma"
                       required
-                      className="w-full rounded-md border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
+                      className="w-full rounded-xl border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
                     />
                   </div>
 
                   <div className="grid gap-3 sm:grid-cols-2">
                     <div>
-                      <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+                      <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">
                         Contact Number *
                       </label>
                       <input
@@ -120,11 +122,11 @@ export function FAQSection() {
                         name="phone"
                         placeholder="+91 98765 43210"
                         required
-                        className="w-full rounded-md border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
+                        className="w-full rounded-xl border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
                       />
                     </div>
                     <div>
-                      <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+                      <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">
                         Email Address *
                       </label>
                       <input
@@ -132,19 +134,19 @@ export function FAQSection() {
                         name="email"
                         placeholder="parent@example.com"
                         required
-                        className="w-full rounded-md border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
+                        className="w-full rounded-xl border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+                    <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">
                       Inquiry Category *
                     </label>
                     <select
                       name="inquiry_type"
                       required
-                      className="w-full rounded-md border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
+                      className="w-full rounded-xl border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
                     >
                       <option value="">Select Category</option>
                       <option value="Admissions 2026-27">Admissions Inquiry</option>
@@ -155,14 +157,14 @@ export function FAQSection() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">
+                    <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-700 mb-1">
                       Your Message
                     </label>
                     <textarea
                       name="message"
                       rows={3}
                       placeholder="Write your query here..."
-                      className="w-full rounded-md border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
+                      className="w-full rounded-xl border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
                     />
                   </div>
                 </div>
@@ -170,7 +172,7 @@ export function FAQSection() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="mt-2 w-full rounded-full bg-[#800020] py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-white shadow-lg transition-all hover:bg-[#5c0017] hover:shadow-red-900/20 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-70"
+                  className="mt-2 w-full rounded-full bg-[#800020] py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-white shadow-md shadow-[#800020]/20 transition-all hover:bg-[#5c0017] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-70"
                 >
                   {isSubmitting ? "Submitting Inquiry..." : "Submit Inquiry →"}
                 </button>
@@ -179,7 +181,7 @@ export function FAQSection() {
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="mt-3 rounded-md bg-emerald-50 border border-emerald-200 p-3.5 text-xs font-medium text-emerald-800"
+                    className="mt-3 rounded-xl bg-emerald-50 border border-emerald-200 p-3.5 text-xs font-medium text-emerald-800"
                   >
                     ✓ Thank you! Your inquiry has been transmitted to Vasant Valley admissions.
                   </motion.div>
@@ -188,7 +190,7 @@ export function FAQSection() {
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="mt-3 rounded-md bg-rose-50 border border-rose-200 p-3.5 text-xs font-medium text-rose-800"
+                    className="mt-3 rounded-xl bg-rose-50 border border-rose-200 p-3.5 text-xs font-medium text-rose-800"
                   >
                     ✕ Transmission failed. Please verify your connection or call us directly.
                   </motion.div>
@@ -197,6 +199,7 @@ export function FAQSection() {
             </div>
           </div>
 
+          {/* Right Column: Glassmorphic FAQ Accordion Items */}
           <div className="lg:col-span-7 space-y-4">
             {faqData.map((faq, index) => {
               const isOpen = openIndex === index;
@@ -205,10 +208,10 @@ export function FAQSection() {
                 <div
                   key={index}
                   className={cn(
-                    "overflow-hidden rounded-md border transition-all duration-300",
+                    "overflow-hidden rounded-2xl border backdrop-blur-md transition-all duration-300 shadow-sm",
                     isOpen
-                      ? "border-[#800020]/30 bg-white shadow-md ring-1 ring-[#800020]/10"
-                      : "border-slate-200/80 bg-white/70 hover:bg-white hover:border-slate-300"
+                      ? "border-[#800020]/30 bg-[#800020]/5 shadow-md ring-1 ring-[#800020]/10"
+                      : "border-white/80 bg-white/60 hover:bg-white/80 hover:border-slate-300/80"
                   )}
                 >
                   <button
@@ -216,20 +219,17 @@ export function FAQSection() {
                     className="flex w-full items-center justify-between gap-4 p-5 sm:p-6 text-left"
                   >
                     <div className="flex items-center gap-3.5">
-                      <span className="font-mono text-sm font-bold text-[#800020] shrink-0">
+                      <span className="font-mono text-sm font-bold shrink-0 text-[#800020]">
                         [{String(index + 1).padStart(2, "0")}]
                       </span>
-                      <h3 className="font-display font-bold text-slate-900 text-base sm:text-lg leading-snug">
+                      <h3 className="font-display font-bold text-base sm:text-lg leading-snug text-slate-900">
                         {faq.question}
                       </h3>
                     </div>
                     <motion.span
                       animate={{ rotate: isOpen ? 45 : 0 }}
                       transition={{ duration: 0.2 }}
-                      className={cn(
-                        "shrink-0 text-2xl font-light transition-colors",
-                        isOpen ? "text-[#800020]" : "text-slate-400"
-                      )}
+                      className="shrink-0 text-2xl font-light text-[#800020]"
                     >
                       +
                     </motion.span>
@@ -243,7 +243,7 @@ export function FAQSection() {
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                       >
-                        <p className="border-t border-slate-100 px-6 pb-6 pt-4 text-xs sm:text-sm leading-relaxed text-slate-600 ml-9 font-normal">
+                        <p className="border-t border-[#800020]/10 px-6 pb-6 pt-4 text-xs sm:text-sm leading-relaxed text-slate-700 ml-9 font-normal">
                           {faq.answer}
                         </p>
                       </motion.div>
