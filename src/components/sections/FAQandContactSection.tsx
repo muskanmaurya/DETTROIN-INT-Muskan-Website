@@ -84,7 +84,7 @@ export function FAQSection() {
           
           {/* Left Column: Glassmorphic Contact Card */}
           <div className="lg:col-span-5">
-            <div className="rounded-3xl border border-white/80 bg-white/70 p-6 sm:p-8 shadow-xl shadow-amber-900/5 backdrop-blur-md">
+            <div className="rounded-xl border border-white/80 bg-white/70 p-6 sm:p-8 shadow-xl shadow-amber-900/5 backdrop-blur-md">
               <div className="mb-6 space-y-1">
                 <span className="inline-block rounded-full bg-[#800020]/10 border border-[#800020]/20 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-[#800020]">
                   Admissions & Help Desk
@@ -108,7 +108,7 @@ export function FAQSection() {
                       name="name"
                       placeholder="e.g. Ananya Sharma"
                       required
-                      className="w-full rounded-xl border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
+                      className="w-full rounded-lg border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
                     />
                   </div>
 
@@ -122,7 +122,7 @@ export function FAQSection() {
                         name="phone"
                         placeholder="+91 98765 43210"
                         required
-                        className="w-full rounded-xl border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
+                        className="w-full rounded-lg border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
                       />
                     </div>
                     <div>
@@ -134,7 +134,7 @@ export function FAQSection() {
                         name="email"
                         placeholder="parent@example.com"
                         required
-                        className="w-full rounded-xl border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
+                        className="w-full rounded-lg border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
                       />
                     </div>
                   </div>
@@ -146,7 +146,7 @@ export function FAQSection() {
                     <select
                       name="inquiry_type"
                       required
-                      className="w-full rounded-xl border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
+                      className="w-full rounded-lg border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
                     >
                       <option value="">Select Category</option>
                       <option value="Admissions 2026-27">Admissions Inquiry</option>
@@ -164,7 +164,7 @@ export function FAQSection() {
                       name="message"
                       rows={3}
                       placeholder="Write your query here..."
-                      className="w-full rounded-xl border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
+                      className="w-full rounded-lg border border-slate-200/80 bg-white/60 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 outline-none backdrop-blur-sm transition-all focus:border-[#800020] focus:bg-white focus:ring-1 focus:ring-[#800020]"
                     />
                   </div>
                 </div>
@@ -208,7 +208,7 @@ export function FAQSection() {
                 <div
                   key={index}
                   className={cn(
-                    "overflow-hidden rounded-2xl border backdrop-blur-md transition-all duration-300 shadow-sm",
+                    "overflow-hidden rounded-lg border backdrop-blur-md transition-all duration-300 shadow-sm",
                     isOpen
                       ? "border-[#800020]/30 bg-[#800020]/5 shadow-md ring-1 ring-[#800020]/10"
                       : "border-white/80 bg-white/60 hover:bg-white/80 hover:border-slate-300/80"

@@ -35,7 +35,7 @@ export function ReviewsSection() {
               transition={{ duration: 0.4, delay: index * 0.08 }}
               whileHover={{ y: -6 }}
               /* Added overflow-hidden below */
-              className="group relative flex flex-col justify-between rounded-3xl border border-amber-200/60 bg-[#FAFAF8] p-6 sm:p-8 shadow-xl transition-all duration-300 hover:shadow-2xl hover:border-amber-300 hover:scale-[1.01] overflow-hidden"
+              className="group relative flex flex-col justify-between rounded-xl border border-amber-200/60 bg-[#FAFAF8] p-6 sm:p-8 shadow-xl transition-all duration-300 hover:shadow-2xl hover:border-amber-300 hover:scale-[1.01] overflow-hidden"
             >
               <div>
                 {/* Header Row: Rating Stars & Category Badge */}
