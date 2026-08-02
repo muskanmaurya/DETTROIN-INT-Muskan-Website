@@ -67,6 +67,10 @@ export const navItems: NavItem[] = [
       { label: "FAQs", href: "#faqs" },
     ],
   },
+  {
+    label: "School ERP",
+    href:"#school-erp",
+  }
 ];
 
 
